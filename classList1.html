@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .button4{
+                background-color: black;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="button1" onclick="
+            change('.button1');
+            ">
+           krish   
+        </button>
+        <button class="button2"onclick="
+        change('.button2');
+        ">
+            Radheyyy
+        </button>
+        <button class="button3" onclick="
+        change('.button3');
+        ">
+            love
+        </button>
+        <script>
+       function change(selector){
+        let n=document.querySelector(selector);
+        if(!n.classList.contains('button4'))
+       {
+        tog();
+        n.classList.add('button4');
+       }
+       else{
+        n.classList.remove('button4')
+       }
+       }
+       function tog(){
+        let b=document.querySelector('.button4');
+        if(b)
+       {
+        b.classList.remove('button4');
+       }
+       }
+        </script>
+    </body>
+</html>

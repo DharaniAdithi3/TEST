@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .button2{
+                background-color: aqua;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="button1" onclick="
+        toggle();
+            ">
+            CLICK
+        </button>
+        <script>
+           function toggle(){
+            let var1=document.querySelector('.button1');
+           if(!var1.classList.contains('button2'))
+           {
+              var1.classList.add('button2');
+           }
+           else{
+            var1.classList.remove('button2');
+           }
+           }
+        </script>
+    </body>
+</html>

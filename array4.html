@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button onclick="
+            max();
+            ">
+            Maximum
+        </button>
+        <button onclick="
+            min();
+            ">
+            Minimum
+        </button>
+        <p class="display"></p>
+        <p class="display1"></p>
+        <script>
+            let array=[30,60,10,5];
+         function max(){
+            let l=array[0];
+            for(let i=0;i<array.length;i++)
+         {
+            if(array[i]>l)
+         {
+            l=array[i];
+         }
+         }
+         //let s=`<p>${l}</p>`;
+         document.querySelector('.display').innerHTML=l;
+         }
+         function min(){
+            let mini=array[0];
+            for(let i=0;i<array.length;i++)
+         {
+            if(array[i]<mini)
+         {
+            mini=array[i];
+         }
+         }
+         document.querySelector('.display1').innerHTML=mini;
+         }
+        </script>
+    </body>
+</html>

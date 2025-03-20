@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button class="hello"
+        onclick="
+        change();
+        ">
+            Hello
+        </button>
+        <input type="text" placeholder="Name" class="name">
+        <button onclick="
+        get();
+        ">
+            submit
+        </button>
+        <p class="display"></p>
+        <button onclick="
+        Toggle();
+        ">
+            Toggle
+        </button>
+        <p class="text">
+            You are beautiful
+        </p>
+        <script>
+        function change(){
+            let button=document.querySelector('.hello');
+            if(button.innerText==='Hello')
+        {
+            button.innerText='Hello kityyyy!!!';
+        }
+        else{
+            button.innerText='Hello';
+        }
+        }
+        function get(){
+            let input=document.querySelector('.name').value;
+            document.querySelector('.display').innerHTML=input;
+
+        }
+        function Toggle(){
+            
+            document.querySelector('.text').innerHTML='';
+        }
+        </script>
+    </body>
+</html>

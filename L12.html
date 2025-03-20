@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function mul(para)
+            {
+                  let r= para();
+                console.log(r*2);
+            }
+            mul(function()
+        {
+            return 2;
+        });
+        function operate(num1,num2,add){
+            return add(num1,num2);
+        }
+        function add(n1,n2)
+        {
+            return n1+n2;
+        }
+       console.log( operate(5,3,add));
+        </script>
+    </body>
+</html>

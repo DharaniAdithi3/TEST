@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1 class="but">
+            Hello,World!
+        </h1>
+        <button  onclick="
+        change();
+        ">
+            Change Text
+        </button>
+        <button onclick="button();">
+            Change Background
+        </button>
+        <br>
+        <br>
+        <input class="getin" type="number">
+        <input class="getin1" type="number">
+        <button onclick="add();">Add number</button>
+        <p class="result"></p>
+        <p class="name">Dharani</p>
+        <button onclick="increase();">
+            Increase FontSize Button
+        </button>
+        <button onclick="decrease();">
+            Decrease FontSize Button
+        </button>
+        
+        <script>
+            function change(){
+                let num=document.querySelector('.but');
+                num.innerHTML='Welcome to Javascript';
+            }
+            let colour='pink';
+            function button(){
+                 document.body.style.backgroundColor= colour;
+            }
+            function add(){
+                let val=document.querySelector('.getin').value;
+                let val2=document.querySelector('.getin1').value;
+                let addition=(parseInt(val)+parseInt(val2));
+                document.querySelector('.result').innerHTML=addition;
+            }
+            let big=50;
+            let small=20
+            function increase(){
+               let size= document.querySelector('.name');
+               size.style.fontSize=big+"px";
+            }
+            function decrease(){
+                let size=document.querySelector('.name');
+                size.style.fontSize=small+"px";
+            }
+           
+
+        </script>
+    </body>
+</html>

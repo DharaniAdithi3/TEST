@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input type="text" placeholder="Name" class="name">
+        <button onclick="
+        todo();
+        ">Add</button>
+        <p class="display"></p>
+        <script>
+            let array=['dinner','soup'];
+            display();
+          function todo(){
+            let v=document.querySelector('.name').value;
+            array.push(v);
+            display();
+          }
+          function display()
+          {
+            let li='';
+            for(let i=0;i<array.length;i++)
+          {
+            let store=array[i];
+            let html= `<p> ${store}</p>`;
+             li+=html;
+            document.querySelector('.display').innerHTML=li;
+          }
+          }
+        </script>
+    </body>
+</html>

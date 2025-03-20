@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input type="text" placeholder="name" class="name">
+        <button onclick="
+        add();
+        ">add</button>
+        <p class="result"></p>
+        <script>
+            let a=[];
+     function add(){
+    let v=document.querySelector('.name').value;
+    a.push(v);
+    display();
+     }
+    
+      function display(){
+        let li='';
+      for(let i=0;i<a.length;i++)
+      {
+        let s=a[i];
+        let html=`<p>${s}</p>`;
+         li+=html;
+      }
+      document.querySelector('.result').innerHTML=li;
+    }
+     
+        </script>
+    </body>
+</html>

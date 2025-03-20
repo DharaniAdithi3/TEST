@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button onclick="
+            red();
+            ">
+            Red
+        </button>
+        <button onclick="blue();
+        ">
+            Blue
+        </button>
+        <button onclick ="green();
+        ">
+            green
+        </button>
+        <p class="para">
+            This colour is so beautiful!!!!
+        </p>
+        <script>
+        function red(){
+            let para=document.querySelector('.para');
+            para.style.color="red";
+        }
+        function blue(){
+            let para=document.querySelector('.para');
+            para.style.color="blue";
+        }
+        function green(){
+            let para=document.querySelector('.para');
+            para.style.color="green";
+        }
+        </script>
+    </body>
+</html>

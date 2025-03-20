@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button onclick="
+            dup();
+            ">
+            duplicate 
+        </button>
+        <p class="display"></p>
+        <script>
+            a=[10,10,20];
+           
+        function dup(){
+            let flag=0;
+            b=[];
+         for(let i=0;i<a.length;i++)
+         {
+            flag=0;
+            for(let j=0;j<b.length;j++)
+         {
+            if(a[i]==b[j])//10==empty,10==10,10==20
+         {
+            flag=1;
+            break;
+         }
+         
+         }
+         if(flag==0)//10//20
+         {
+            b.push(a[i]);
+         }
+         }
+         document.querySelector('.display').innerHTML=b;
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input class="name" type="text" placeholder="Username">
+        <input class="password" type="password" placeholder="Password">
+        <button onclick="
+         submit();
+        ">Submit</button>
+        <script>
+            function submit(){
+            let aname='dharani';
+            let apass='super@333';
+            let name=document.querySelector('.name').value;
+            let password=document.querySelector('.password').value;
+            if(name===aname)
+        {
+            if(password===apass)
+        {
+            console.log('true');
+        }
+        }
+        else{
+            console.log('false');
+        }
+    }
+
+        </script>
+    </body>
+</html>

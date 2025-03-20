@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            let user={
+                name:'radha',
+                email:'radha@3',
+                age:20
+            }
+            localStorage.setItem('user',JSON.stringify(user));
+            let parse= localStorage.getItem('user');
+            let result=JSON.parse(parse);
+            console.log(result);
+            let product={
+                id:10,
+                name:'dharani',
+                price:300
+            }
+            let covert=JSON.stringify(product);
+            console.log(covert);
+            user.age=40;
+            localStorage.setItem('user',JSON.stringify(user));
+            let reset=localStorage.getItem('user');
+            let result1=JSON.parse(reset);
+            console.log(result1);
+        </script>
+    </body>
+</html>

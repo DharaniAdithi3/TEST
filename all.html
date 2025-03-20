@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h2{
+                text-align:center;
+            }
+            p{
+                border:1px solid black;
+                padding:20px;
+            }
+            .but{
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body style="background-color: lightblue;">
+        <h2>Welcome to my page
+        </h2>
+        <p>
+            This is a simple page
+        </p>
+        <button class="change"
+        onclick="changecolour();">
+            Click me!
+        </button>
+        <button class="but" onclick="back();">
+            Heyyy!!!
+        </button>
+        <script>
+            function changecolour(){
+           document.body.style.backgroundColor='yellow';
+            }
+            function back(){
+
+                let num=document.querySelector('.but');
+                num.style.backgroundColor='yellow';
+            }
+        </script>
+    </body>
+</html>

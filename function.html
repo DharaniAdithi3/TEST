@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button 
+        onclick="change();
+        ">
+            background color
+        </button>
+        <br><br>
+        <input class="name" type="text" placeholder="username">
+        <input class="mail" type="email" placeholder="mail">
+        <button 
+        onclick="check();
+        ">
+        submit</button>
+        <script>
+         function change(){
+            document.body.style.backgroundColor="violet";
+         }
+         function check(){
+            let name=document.querySelector('.name').value;
+            let email=document.querySelector('.mail').value;
+            if(!name)
+         {
+            alert("fill the name");
+         }
+         
+         else if(!email)
+         {
+            alert("fill the mail");
+         }
+         else{
+            alert('success');
+         }
+         }
+        </script>
+    </body>
+</html>

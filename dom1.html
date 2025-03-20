@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with Table</title>
+</head>
+<body>
+  <h1>Enter Your Details</h1>
+  <form class="userForm">
+    <label for="name">Name:</label>
+    <input type="text" class="name" placeholder="Enter your name" required>
+    <label for="age">Age:</label>
+    <input type="number" class="age" placeholder="Enter your age" required>
+    <button type="button" class="submitButton" onclick="addRow()">Submit</button>
+  </form>
+<br>
+  <table border="1" class="dataTable">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </table>
+
+  <script>
+    function addRow() {
+      // Retrieve input values using class selectors
+      const name = document.querySelector(".name").value;
+      const age = document.querySelector(".age").value;
+
+      // Check if fields are empty
+      if (!name || !age) {
+        alert("Please fill in both fields.");
+        return;
+      }
+
+      // Select the table
+      const table = document.querySelector(".dataTable");
+
+      // Insert a new row at the end of the table
+      const newRow = table.insertRow(-1);
+
+      // Insert cells into the row and set their text content
+      newRow.insertCell(0).innerText = name;
+      newRow.insertCell(1).innerText = age;
+
+      // Clear the input fields
+      document.querySelector(".userForm").reset();
+    }
+  </script>
+</body>
+</html>
+
+
+

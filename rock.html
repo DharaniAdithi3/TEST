@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p>
+            Rock Paper Scissors
+        </p>
+        <button onclick="player('rock');
+        ">
+            Rock
+        </button>
+        <button onclick="
+        player('paper');
+        ">
+            Paper
+        </button>
+        <button onclick="
+        player('scissors');
+        ">
+            Scissors
+        </button>
+        <script>
+            let score={
+                win:0,
+                lose:0,
+                tie:0
+            }
+            function player(guess)
+            {
+                let computer=random();
+                let result='';
+              if(guess==='rock')
+              {
+                if(computer==='rock')
+              {
+                result='tie';
+                score.tie+=1;
+              }
+              else if(computer==='paper')
+              {
+                result='lose';
+                score.lose+=1;
+              }
+              else if(computer==='scissors')
+              {
+                result='win';
+                score.win+=1;
+              }
+            }
+            if(guess==='paper')
+              {
+                if(computer==='rock')
+              {
+                result='win';
+                score.win+=1;
+              }
+              else if(computer==='paper')
+              {
+                result='tie';
+                score.tie+=1;
+              }
+              else if(computer==='scissors')
+              {
+                result='lose';
+                score.lose+=1;
+              }
+            }
+            if(guess==='scissors')
+              {
+                if(computer==='rock')
+              {
+                result='lose';
+                score.lose+=1;
+              }
+              else if(computer==='paper')
+              {
+                result='win';
+                score.win+=1;
+              }
+              else if(computer==='scissors')
+              {
+                result='tie';
+                score.tie+=1;
+              }
+            }
+            console.log(`computer move ${computer} player move ${guess} result ${result} wins ${score.win} lose ${score.lose} tie ${score.tie}`);
+            }
+
+            function random(){
+                let number=Math.random();
+                let computer='';
+                if((number>=0)&&(number<1/3))
+            {
+                     computer='rock';
+            }
+            else if((number>=1/3)&&(number<2/3))
+            {
+                computer='paper';
+            }
+            else{
+                computer='scissors';
+            }
+            return computer;
+            }
+        </script>
+    </body>
+</html>

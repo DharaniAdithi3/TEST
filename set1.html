@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dharani</title>
+    </head>
+    <body>
+        <button onclick="
+        count++;
+        ">
+            Add
+        </button>
+        <button onclick="
+         count--;
+        ">
+            Remove
+        </button>
+        <script>
+            let count=1;
+            setInterval(function(){
+               let v=document.title;
+              if(v==='dharani')
+              {
+                document.title=`count = ${count}`
+              }
+              else{
+                document.title=`dharani`;
+              }
+            },3000)
+        </script>
+    </body>
+</html>

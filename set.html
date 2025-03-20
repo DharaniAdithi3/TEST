@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+     <button class="button" onclick="
+        change();
+        ">
+        Start
+     </button>
+     <button onclick="
+     show();
+     ">
+        Add to cart
+     </button>
+     <p class="display"></p>
+    </body>
+    <script>
+        function change(){
+    let value=document.querySelector('.button').innerText;
+    
+    if(value==='Start')
+    {
+        document.querySelector('.button').innerText='Loading.....';
+    }
+    
+    
+        setTimeout(function(){
+        let v=document.querySelector('.button').innerText
+
+            if(v!=='Start')
+        {
+            document.querySelector('.button').innerText='Finished'; 
+        }},3000);
+    
+        }
+        function show(){
+       let v= document.querySelector('.display').innerHTML='Added';
+       //console.log(v);
+         setTimeout(function(){
+            document.querySelector('.display').innerHTML='';
+         },3000);
+        }
+    </script>
+</html>

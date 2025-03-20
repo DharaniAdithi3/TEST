@@ -1,0 +1,221 @@
+.main{
+    /* margin-left:auto;
+    margin-right:auto; */
+    max-width:600px;
+    /* margin-left:30px;
+    margin-right: 30px; */
+    /* max-width: 1100px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  margin-top: 140px;
+  margin-bottom: 100px; */
+
+  /* margin-left: auto;
+     margin-right auto;
+     Is a trick for centering an element horizontally
+     without needing a container. */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;;
+    text-align: center;
+    margin-bottom:80px;
+}
+.amazon-img{
+    width:100px;
+}
+.logo{
+    display:none;
+}
+@media(max-width:580px)
+{
+    .amazon-img{
+        display:none;
+    }
+    .logo{
+        display:block;
+        width:35px;
+    }
+}
+.checkout-para{
+    font-family: Roboto;
+    font-size:20px;
+    font-weight:500;
+    text-align: center;
+    margin-top:5px;
+}
+.item-span{
+    color:rgb(27, 85, 129)
+}
+.lock-img{
+    margin-top:-10px;
+}
+.review-para{
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 22px;
+    /* margin-top:70px; */
+    margin-left:25px;
+    /* margin-left: auto; */
+}
+.grid{
+    margin-left: 25px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-family: Roboto;
+    border:1px solid rgb(222, 222, 222);
+    margin-right:25px;
+    
+}
+.summary-para{
+    font-family: Roboto;
+    font-weight:600;
+    font-size: 18px;
+}
+.grid-1{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    margin-bottom:-20px;
+}
+.grid-2{
+    border-bottom:1px solid rgb(222, 222, 222);
+    display:grid;
+    grid-template-columns: 1fr auto;
+}
+/* .grid-3{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    border-bottom:1px solid rgb(222, 222, 222);
+} */
+ .top-border{
+    border-top: 1px solid rgb(222, 222, 222);
+    line-height:30px;
+ }
+ .estimate-gap{
+    margin-top:20px;
+ }
+.order-total,.rate-total{
+    color: rgb(177, 39, 4);
+    font-size:18px;
+    font-weight: 600;
+}
+.order-button{
+    /* margin-top:20px;
+    margin-left:50px;
+    padding-left:;
+    padding-right:50%; */
+    width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+
+  margin-top: 11px;
+  margin-bottom: 15px;
+  border-style:none;
+  background-color: rgb(255, 216, 20);
+  font-family: Roboto;
+  cursor: pointer;
+}
+.order-button:hover{
+    background-color: rgb(233, 198, 20);
+}
+.delivery-grid{
+    font-family: Roboto;
+    margin-left:auto;
+    margin-right:auto;
+    border:1px solid rgb(222, 222, 222);
+    max-width:490px;
+    margin-top:10px;
+    padding-left:30px;
+    padding-right:30px;
+}
+.delivery-date{
+    /* font-family:Roboto; */
+    font-weight:bold;
+    font-size:20px;
+    color:green;
+}
+.socks-img{
+    width:100px;
+    margin-top:10px;
+}
+.description-para{
+    font-weight:bold;
+    margin-top:5px;
+}
+.rate{
+    color:rgb(177, 39, 4);
+    font-weight:bold;
+}
+.add{
+    color:rgb(1, 124, 182);
+}
+.socks-grid{
+    display:grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    text-align: top;
+}
+.quantity-flex{
+    display:flex;
+    margin-top:-25px;
+    column-gap: 5px;
+}
+.option-grid{
+    display:grid;
+    grid-template-columns: 20px 150px;
+    align-items: center;
+    column-gap: 15px;
+    line-height: 5px;
+}
+.radio-option{
+  width: 20px;               /* Adjust the width */
+  height: 20px;
+}
+.shipping-cost{
+    color: rgb(120, 120, 120); 
+}
+.shipping-day{
+    color:green;
+    font-weight: 600;
+}
+.choose-para{
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+@media(min-width:1000px)
+{
+    .max-grid{
+        display:grid;
+        grid-template-columns:auto auto ;
+        /* column-gap: 40px; */
+    }
+    .grid{
+        margin-left:400px;
+        width:300px;
+    }
+    .comman-grid{
+        /* margin-left:10px; */
+        margin-top:-324px;
+        margin-right: 390px;
+        margin-left:-250px;
+        /* width:1000px; */
+    }
+    .review-para{
+        margin-left:-300px;
+        margin-top:-90px;
+    }
+    .delivery-grid{
+        width: 800px;
+    }
+}
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <ul class="unorder"></ul>
+        <button onclick="add();
+        ">add
+        </button>
+        <p class="result"></p>
+        <script>
+            let array=[10,20,30,40,50];
+            function add(){
+                let li='';
+             //let v=document.querySelector('.unorder');
+             for(let i=0;i<array.length;i++)
+             {
+                li+=`<p>${array[i]}<p>`;
+             }
+             document.querySelector('.result').innerHTML=li;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input class="color" type="text" placeholder="color">
+        <button class="submit"
+        onclick="submit();"
+        >
+        submit</button>
+        <p class="result"></p>
+        <script>
+           function submit(){
+            let color=document.querySelector('.color').value;
+            let result=document.querySelector('.result');
+            if(color==='red')
+        {
+            result.innerHTML='STOP';
+        }
+        else if(color==='yellow')
+        {
+            result.innerHTML='GET READY';
+        }
+        else if(color==='green')
+        {
+            result.innerHTML='GO';
+        }
+        else{
+            result.innerHTML='invalid color';
+        }
+    }
+        </script>
+    </body>
+</html>

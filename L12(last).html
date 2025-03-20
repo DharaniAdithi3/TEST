@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function greet(name,delay)
+            {
+                setTimeout(function(){
+                    console.log(`HELLO ${name}`);
+                },delay);
+            }
+            greet('DHARANI',2000);
+            let step=1;
+            function s()
+            {
+                if(step<=3)
+            {
+                console.log(`Step-${step}`);
+                step++;
+                setTimeout(s,3000);
+            }
+            }
+            s();
+              let count=0;
+           let interval= setInterval(function(){
+                let time= new Date();
+                console.log(time);
+                count++;
+                if(count>=10)
+            {
+                clearInterval(interval);
+                console.log("stop");
+            }
+
+            },1000);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            let product={
+                user:'dharan',
+                cart:10,
+                settings:'update'
+            }
+            localStorage.setItem('product',JSON.stringify(product));
+           let result=JSON.parse(localStorage.getItem('product'));
+            delete result.cart;
+            console.log(result);
+            
+        </script>
+    </body>
+</html>

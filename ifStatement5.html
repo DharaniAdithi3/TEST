@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input class="pass" type="password" placeholder="password">
+        <button onclick="submit();
+        ">
+        submit</button>
+        <script>
+          function submit(){
+            let count=document.querySelector('.pass').value;
+            if(count.length<8)
+          {
+            alert("weak password");
+          }
+          else{
+            alert('strong password');
+          }
+          }
+          let number=15;
+          if(number%3===0&&number%5===0)
+          {
+            console.log('yes');
+          }
+          else{
+            console.log('no');
+          }
+        </script>
+    </body>
+</html>
